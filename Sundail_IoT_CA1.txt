@@ -1,0 +1,53 @@
+Clocked Design Document
+Introduction
+Clocked will be a one or more physical IoT device per business premises and webapp accessible through the internet. Our current focus and Minimum Viable Product (MVP) is to have it work with one device per business premises with scalability being a “should have”.
+
+The device itself in short: will be a touchscreen display for inputting credentials and display current time and feedback on successful or unsuccessful clock and login attempts. The device will also include a Raspberry Pi, we will be testing with the Zero and 4. Preference is for the Zero as it would mean less cost.
+These two physical devices will be grouped and called “the device” or “the clock machine”. On the backend they will be connected to an AWS server which will act as a webserver and interact with the SQL database. The webapp will be accessible from anywhere with internet and information will be given on a need-to-know basis. Managers accounts will differ from employees for example. With the webapp employees can check their rota, managers and payroll can check attendance.
+
+The Team
+Our group name is Sundial to keep with the theme of time keeping. The work for this project will be delegated as follows:
+
+Sean Stephens (UI , UX and Frontend)
+// {Sean}Brief description of role
+Ciaran Brennan (IoT, Hardware)
+// {Ciaran}Brief description of role
+Desmond Madden (Testing of System, Software, Security and UX)
+// {Desmond}Brief description of role
+Kealan Crilly (System Architect)
+// {Kealan}Brief description of role
+Finbar Thornton {Backend, Database and Server}
+My role will involve programming and designing the backend logic the device will use to communicate with the server and the server with the device, how that data will be stored and ensuring security of the data.
+
+
+
+
+Hardware{Ciaran}
+[FRITZING DIAGRAM IMAGE OF CIRCUIT]
+// Describe components (Pi, sensors, display), NFC technology, where they’re sourced, if they’re ordered or received. NFC on the smartphone, how reliable components are. Include images of the components How will the device be powered, how will it connect to the internet (WiFi, Internet). Describe what information the device will accept from the outside.
+At the end include the work you will be doing.
+
+System{Kealan}
+// Talk about the system as a whole, not in as much detail as others topic but enough to have an understanding of the logical layout.
+At the end include the work you will be doing.
+
+Backend{Finbar}
+// Talk about device logic for communicating with AWS with PubNub, how the data will be sent, how it will be stored once it reaches the server. How will it be secured? Choices for login in credentials, database schema.
+At the end include the work you will be doing.
+
+User Interface{Sean}
+// Talk about the UI, share pictures of it, design choices. How will the user interact with it? What access will they have? Where can they interface with it? Do managers and employees see the same amount of information?
+At the end include the work you will be doing.
+
+Testing{Desmond}
+// Pretty much a repeat of the presentation with as much more detail as you want, include how you’ll test, what you’ll test. Security testing. Like Enda brought up, testing from the Managers perspective, its assumed the employee can’t be trusted but not the manager, we should change that. At the end include the work you will be doing.
+
+
+Personas and Use Cases {Anyone}
+// 5 Personas(5 Use cases): Employee (Everything works), Employee (Forgot their phone and password), Employee(New employee being added to the system), Payroll(Adding someone who can’t get clocked in), Manager(Checking on who is in and who is late)
+
+
+
+
+
+
