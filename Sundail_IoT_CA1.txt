@@ -14,6 +14,7 @@ Ciaran Brennan (IoT, Hardware)
 // {Ciaran}Brief description of role
 Desmond Madden (Testing of System, Software, Security and UX)
 // {Desmond}Brief description of role
+My role in this project is to test the System, Software, Security and UX of the device and app and provide feedback and possible solutions to the relevant roles.
 Kealan Crilly (System Architect)
 // {Kealan}Brief description of role
 Finbar Thornton {Backend, Database and Server}
