@@ -1,0 +1,28 @@
+>>>>[Get the repo onto your system]
+
+git clone [repo link]
+git log
+git branch 'name-what-this-adds'
+git checkout 'name-what-this-adds'
+
+>>>>[Add files to your repo folder]
+
+git status
+git add .
+git commit
+
+>>>>[Vim will open use this convention to write commit messages]:
+
+Capitalized, short (50 chars or less) summary
+
+More detailed explanatory text, if necessary.  Wrap it to about 72
+
+>>>>[Use :wq or :x to save and quit the commit in vim]
+
+git push origin 'name-what-this-adds'
+
+>>>>[Then you delete that branch when you're done with it with]
+
+git branch -d 'branch-name'
+
+>>>>[And start the process again.]
