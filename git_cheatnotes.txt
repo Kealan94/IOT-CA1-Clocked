@@ -5,6 +5,10 @@ git log
 git branch 'name-what-this-adds'
 git checkout 'name-what-this-adds'
 
+>>>>[Before every commit pull any changes to the repo]
+
+git pull
+
 >>>>[Add files to your repo folder]
 
 git status
