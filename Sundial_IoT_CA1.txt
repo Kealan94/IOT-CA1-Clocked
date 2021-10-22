@@ -55,9 +55,37 @@ as an employee and his hours are stored and kept safe in the database.
 The work that I shall be carrying out as the system architect is not only the installing of software and setting up of hardware, but I will be managing the overall system as to how it progresses forward at each stage of this project. This means that I can keep a close eye on the system as a whole and make changes or tweaks to a piece of software or find better use for hardware that less problems can occur. Further to my work I must ensure and continue to see that constant engagement and feedback is continuous and up to date with each member of the team in my group. Using this method gives us as a team and the project itself a higher chance of being a success at the end of the project.
   
 
-Backend{Finbar}
-// Talk about device logic for communicating with AWS with PubNub, how the data will be sent, how it will be stored once it reaches the server. How will it be secured? Choices for login in credentials, database schema.
-At the end include the work you will be doing.
+Backend, Server & Database
+The backend of the system will consist of Python, PubNub, AWS and SQL.
+Python will be used for the logic on the Pi, receiving and handling NFC data from the NFC sensor as stated above. In the event the device loses power and restarts, a cron job will @reboot to begin the program again to listen to the NFC sensor. A possible approach is using system to run the program from device start-up as a daemon in the background although I only know this in theory. This may be preferred as cron is only accurate to the minute, while an NFC reader needs to be accurate to the second at most.
+
+This NFC data will include a string unique to that employee. The minimum to have the process working is to use the employees primary key as the id, while the preferred method would be to use a separate string id. So, the SQL databases primary key isn’t exposed to the outside. For added security this id could change every day or week requiring the employee to sign into the webapp on their phone to receive the current required NFC. Although in researching this, I don’t think it is easily implementable to have a webapp write an NFC on a phone, especially for non-Android.
+
+From the Pi, the data will be sent to the AWS webserver using PubNub. PubNub has a global messaging layer they call the “Data Stream Network”, its used for real-time, close to instant data transmission. Like chat messages or in our case, sensor readings. We will use their API to send our data from the Pi to the webserver. PubNub will encrypt this data so its sent securely, in real-time. Which is important for our product as an employee doesn’t want to clock in and wait more than five seconds to know they can start work.
+
+Once this data reaches the AWS webserver it will then be stored in the SQL database, also hosted by AWS. Then depending on the data received the webserver will send a response to that device display and to the employee’s smartphone. The webserver will run on a free AWS tier, it will be written with Flask, which is a web library for Python. Flask will handle all logic on the server including interactions with the database. This includes logging in from the webapp, making sure only the people who need to see certain pages and data, see it. For example, payroll staff need to see more than a regular employee whose only use of the product is to clock in and check their rota. Sessions will be kept using cookies with Pythons flask-session dependency.
+
+Speaking of rota a “would like to have”, would be when a change happens in the rota or a new rota is added. The system could email the relevant employees letting them know of the change. As it can’t be expected the employee will login to the webapp to check their rota every day. With this there would need to be a confirmation email to lock in the email account for it to receive rota updates. That way bary@gmail.com isn’t getting barry@gmail.com’s rota.
+Although I trust AWS to keep the data secure in their database, its preferred to have all data encrypted, including password hashes. Then in the event of a data breach of the database it lessens the damage. For example, SQL injection to receive all of a table’s data. This kind of attack will be avoided through data sanitizing at all points of user input, but nothings certain with security.
+
+More steps towards better security will be password requirements. The standard is 15 characters, alphanumeric with special characters but on a UX level this may only receive pushback from employees not wanting to remember that an in-turn writing it down somewhere. So, our approach will be to allow any user to have a password of that length or longer, but only require higher level accounts to have it. Such as managers and payroll. Regular employees will minimum will be 7 characters of alphanumeric upper and lowercase letters, they will be allowed to make their password as long and difficult as they so please. If either type of staff attempts to create a password below the requirements of their type, the webapp will inform them of the minimum requirements and that they currently do not meet them.
+The database will be relational as the data itself is relational. An NFC relates to an employee which relates to a rota which relates to a company.
+[clocked_schema image]
+
+Table: User
+id will be the primary key for the user. Firstname, lastname and pass are self-explanatory. Password security was defined earlier. Type will be the type of user it is. Be it a “Manager”, “Employee” etc. This will help in deciding level of access. Nfc will be the string the user will use to connect to the reader. Company_id is the foreign key to show what company the user is in. The user will also have an email I forgot to add to the schema, it would be a varchar.
+
+Table: Company
+id will be the primary key for the company, name, address and phone are self-explanatory. User_count is the amount of users with that company_id, in that company.
+
+
+
+Table: Attendance
+Id is the primary key for the attendance record. Nfc is the string the user used to connect to the device. Timestamp is the time and date the user connected. Type is whether it was a clock for “In, Out, Break”. User_id and company_id are foreign keys.
+Table: Rota
+Id is the primary key for the rota. Day is the day of the week, start is the starting time, end is the clocking out time, status is whether they are currently “In, Out, Break of Absent”. Company_id and user_id are foreign keys.
+
+
 
 User Interface{Sean}
 //
