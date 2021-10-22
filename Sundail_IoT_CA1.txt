@@ -45,13 +45,6 @@ System Architecture Diagram
 Below is the system architect diagram which is intended to give a more visual depiction of how they system will operate and how the different hardware shall carry out tasks and processes. 
 (Image of  System Diagram goes here)
 
-
-Use Case Persona
-An example of a user of the system is James who is an employee at the retail store that uses the clocked system. 
-James cannot clock in as he has forgotten his phone and password that contains his login details so he will have to 
-go to the manager’s office and request to be logged in manually. There will be no issue with this as James details 
-as an employee and his hours are stored and kept safe in the database.
-
 The work that I shall be carrying out as the system architect is not only the installing of software and setting up of hardware, but I will be managing the overall system as to how it progresses forward at each stage of this project. This means that I can keep a close eye on the system as a whole and make changes or tweaks to a piece of software or find better use for hardware that less problems can occur. Further to my work I must ensure and continue to see that constant engagement and feedback is continuous and up to date with each member of the team in my group. Using this method gives us as a team and the project itself a higher chance of being a success at the end of the project.
   
 
@@ -132,15 +125,13 @@ Personas and Use Cases {Anyone}
 USE CASE
 Sarah is 20 year old employee in the retail shop who would be quite adept with technology. Sarah is a part time worker who has to work at least 3 days a week, she has had no issues with the clocking in system and it has been using it for 2 months, so Sarah finds the new clocking system much less hassle than any other she has used before.
 
-Manager - Frank
 
-56 year old Man who has been working in the retail sector for 30 years. He is very open to the idea of CLOCKED and has been using the system happily for a number of weeks
-
-Frank is the manager of the shop and wants to know who is in work and who is absent. To do this he logs into the CLOCKED web app, and goes to the View Staff menu option. Which allows him to view all current workers in the shop. The CLOCKED
-system shows that one of his workers is absent from work without making him aware that she would be absent. He gets her phone number from his files to contact her and resolves the issue.
-
-
-
+Use Case Persona
+Employee - James
+An example of a user of the system is James who is an employee at the retail store that uses the clocked system. 
+James cannot clock in as he has forgotten his phone and password that contains his login details so he will have to 
+go to the manager’s office and request to be logged in manually. There will be no issue with this as James details 
+as an employee and his hours are stored and kept safe in the database.
 
 
 
