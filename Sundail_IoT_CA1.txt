@@ -42,6 +42,10 @@ At the end include the work you will be doing.
 
 Testing{Desmond}
 // Pretty much a repeat of the presentation with as much more detail as you want, include how you’ll test, what you’ll test. Security testing. Like Enda brought up, testing from the Managers perspective, its assumed the employee can’t be trusted but not the manager, we should change that. At the end include the work you will be doing.
+For this project, we'll have to do multiple waves of testing, doing unit-testing, integration and performance tests and then finally user acceptance at the end from both parties (the Employee and the Manager) perspectives. This is to make sure the code is working as it should and that it is properly connected and interacting with the other features, such as the terminal, the webserver, and the database, with as little of errors or problems that we can.
+Unit-Testing is a way of testing a small segment of code isolated away from the rest of the app, be that a function, method, subroutine, or property, to confirm that it can be executed properly without relying on others.
+Integration is when we start putting all the code together and testing them as a group instead of individually Unit-Testing them. This is to make sure nothing interferes with other parts of the system, unless we have purposefully aimed to make it that way.
+Performance Testing is when, after integration is all sorted, we put the system under various workloads to test its response time, speed, resource usage and other aspects that might affect the systems overall performance.
 
 
 Personas and Use Cases {Anyone}
