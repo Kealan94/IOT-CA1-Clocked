@@ -168,6 +168,10 @@ Manager - Frank
 Frank is the manager of the shop and wants to know who is in work and who is absent. To do this he logs into the CLOCKED web app, and goes to the View Staff menu option. Which allows him to view all current workers in the shop. The CLOCKED
 system shows that one of his workers is absent from work without making him aware that she would be absent. He gets her phone number from his files to contact her and resolves the issue.
 
+New Employee - Daniel
+
+Daniel is a 17 year old tech savvy male who's nervous starting his new job to start saving for his first car. Since he's still underage and in school, he can only work at the weekends and holidays, He owns a Samsung S10 android phone.
+Arriving for his first day on his new job, the manager is adding him into the system. For this, he gives his name and email and the Manager adds them into the database and some keys and a password are generated to create a new user in the database. Daniel then downloads the Clocked app and signs in using his email and the password generated.
 
 
 
