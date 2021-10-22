@@ -107,19 +107,19 @@ there is no way the system can become stuck or can break down depending on user 
 
 Testing{Desmond}
 // Pretty much a repeat of the presentation with as much more detail as you want, include how you’ll test, what you’ll test. Security testing. Like Enda brought up, testing from the Managers perspective, its assumed the employee can’t be trusted but not the manager, we should change that. At the end include the work you will be doing.
-For this project, we'll have to do multiple waves of testing, doing unit-testing, integration and performance/system tests and then finally user acceptance at the end from both parties (the Employee and the Manager) perspectives. 
+For this project, we'll have to do multiple waves of testing, doing unit-testing, integration, and performance/system tests, and then finally user acceptance at the end from both parties (the Employee and the Manager) perspectives. 
 So using an AGILE testing methodology would be best as it would mean that we are continuously testing what we are currently doing.
 {AGILE image}
-This is to make sure the code is working as it should and that it is properly connected and interacting with the other features, such as the terminal, the webserver, and the database, with as little of errors or problems that we can.
+This is to make sure the code is working as it should and that it is properly connected and interacting with the other features, such as the terminal, the webserver, and the database, with as few errors or problems that we can.
 Unit-Testing is a way of testing a small segment of code isolated away from the rest of the app, be that a function, method, subroutine, or property, to confirm that it can be executed properly without relying on others.
-Anytime a change is made to the code, new unit testing will need to be conducted to ensure that it hasn't negatively affected the current build of the system and so any unknown issues are resolved efficiently and in a timely manner.
-Integration is when we start putting all the code together and testing them as a group instead of individually Unit-Testing them. This is to make sure nothing interferes with other parts of the system, unless we have purposefully aimed to make it that way.
-Performance or System Testing is when, after integration is all sorted, we put the system under various workloads to test its response time, speed, resource usage and other aspects that might affect the systems overall performance.
-During this, I'll also be testing the security of various aspects of the system, trying to break it and or find vulnerabilities and reguraly provide feedback to those in the relevent roles. 
-For this, I'll be researching and hopefully using the Operations Security (OPSEC) methodology. OPSEC, is a 5-Step process in which I must indentify critical information, analyze the threat, analyze the vulnerability, access the risks and then apply the appropriate countermeasures. In regards to the system security, notable prioritizing securing the NFC and database aspects of it.
+Anytime a change is made to the code, new unit testing will need to be conducted to ensure that it hasn't negatively affected the current build of the system and so any unknown issues are resolved efficiently and promptly.
+Integration is when we start putting all the code together and testing them as a group instead of individually Unit-Testing them. This is to make sure nothing interferes with other parts of the system unless we have purposefully aimed to make it that way.
+The performance or System Testing is when, after integration is all sorted, we put the system under various workloads to test its response time, speed, resource usage, and other aspects that might affect the system's overall performance.
+During this, I'll also be testing the security of various aspects of the system, trying to break it and or find vulnerabilities, and regularly providing feedback to those in the relevant roles. 
+For this, I'll be researching and hopefully using the Operations Security (OPSEC) methodology. OPSEC is a 5-Step process in which I must identify critical information, analyze the threat, analyze the vulnerability, access the risks, and then apply the appropriate countermeasures. In regards to the system security, notable prioritizing securing the NFC and database aspects of it.
 {OPSEC image}
-After all the previous test phases are completed, then we can start doing User Acceptance Testing. This is the final phase to be done. This is where we have to get users, most likely friends and or family, to test the system from both employee and manager views and see if they are able to complete a number of tasks in emulated scenarios similar to the envirnoment of its intended use. 
-The system must be as easy to use and efficient as possible. We'd need to observe and take note of where the users are clicking or tapping, how the they feel about the size, position and colour of features on the app and webpages.
+After all the previous test phases are completed, then we can start doing User Acceptance Testing. This is the final phase to be done. This is where we have to get users, most likely friends and or family, to test the system from both employee and manager views and see if they can complete several tasks in emulated scenarios similar to the environment of its intended use. 
+The system must be as easy to use and efficient as possible. We'd need to observe and take note of where the users are clicking or tapping, how they feel about the size, position, and colour of features on the app and webpages.
 
 
 Personas and Use Cases {Anyone}
