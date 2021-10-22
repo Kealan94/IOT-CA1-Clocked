@@ -11,13 +11,17 @@ Our group name is Sundial to keep with the theme of time keeping. The work for t
 Sean Stephens (UI , UX and Frontend)
 // {Sean}Brief description of role
 My Role in this project is to design the User Interface and to define what the users experience will be when using this system, along with who will be accessing the system and where.
+
 Ciaran Brennan (IoT, Hardware)
 // {Ciaran}Brief description of role
+
 Desmond Madden (Testing of System, Software, Security and UX)
 // {Desmond}Brief description of role
 My role in this project is to test the System, Software, Security and UX of the device and app and provide feedback and possible solutions to the relevant roles.
+
 Kealan Crilly (System Architect)
-// {Kealan}Brief description of role
+// {Kealan}Brief description of role Description of role
+I am the system architect for this project and my role will be involved with the design of the technical infrastructure for the project and the acquiring of the hardware and installation of software involved for this project. 
 Finbar Thornton {Backend, Database and Server}
 My role will involve programming and designing the backend logic the device will use to communicate with the server and the server with the device, how that data will be stored and ensuring security of the data.
 
@@ -29,9 +33,34 @@ Hardware{Ciaran}
 // Describe components (Pi, sensors, display), NFC technology, where they’re sourced, if they’re ordered or received. NFC on the smartphone, how reliable components are. Include images of the components How will the device be powered, how will it connect to the internet (WiFi, Internet). Describe what information the device will accept from the outside.
 At the end include the work you will be doing.
 
+IOT HARDWARE
+I am Ciaran and my focus on this project will primarily be the IOT hardware. The components we will be using for Clocked in a pi, a NFC(Near Field Communication) sensor and a screen. NFC technology is used worldwide in everyday life such as tapping a debit card off the card machine to pay for your groceries or using apple pay and google wallet. NFC has a range of 4cm and uses two electronic devices. I bought the raspberry pi4 model B 4GB for 78£ along with all the necessary equipment from *Insert link* along with the sensor called the NFC HAT for £13.50 from *Insert link* and we haven’t yet fully decided on which screen we are going to acquire. The pi4 and the sensor has arrived. Phones support NFC so in our project we will try add a virtual NFC card to the app so that an employee can tap it against the sensor whenever he/she arrives into work and leaves it. NFC is generally very reliable as it doesn’t require internet and only needs to devices that support it, NFC is also very quick to use as all it takes is a quick hand motion. Issues that may affect this method of clocking in is that if there is no power the raspberry pi will not work, another issue is that an employee may forget their phone which means they would be unable to use NFC. In terms of the hardware we have got the raspberry pi is very reliable as it can be ran none stop for long periods of time, I haven’t yet got a chance to test the reliability of the NFC sensor as it only came in during this week. The raspberry pi will be powered using a standard power supply with 5.1 voltage and a 2.5A current plugged into a socket on the wall. The device when it is put together will be able to tell the time, know if an employee is clocked in to work or is clocking out and it will have to be able to allow an employee to clock in manually if there is an issue with the NFC. In this project I hope to be able to work all the devices in a proper manner and be able to make them work together, I will have to connect the NFC sensor to the pi in order for the pi to know if a user has clocked in or out, I will connect the screen to the raspberry pie using a HDMI so you can see feedback from the screen to say you have successfully clocked in. I will have to learn how the NFC sensor works and if the pi is compatible with the screen.
+
 System{Kealan}
 // Talk about the system as a whole, not in as much detail as others topic but enough to have an understanding of the logical layout.
 At the end include the work you will be doing.
+
+System Architect
+The system itself
+The system itself is a touchscreen display for the users of it to be able to input their own credentials to clock in and out of work. The response from the screen displays a success or failure. A success gives a green arrow and tick, a failure shows a red x error and denies access to the user. This is the core part of the user experience and user interface of the system. It is what the user will see and feel when they go to carry out their intended task of clocking in. It is important and often understated within systems because a nice clean easy and efficient interface and experience for a user means they themselves are more willing and happier to continue to use the system due to the ease with which they can perform their task.
+Beyond this screen other components of the system are the database which stores the information of the users of the system. The database itself can be updated and changed in keeping up to date with new users or users leaving the system for whatever reason. Security of the data in the database is of utmost importance and must be kept as secure as possible to ensure the confidentiality and integrity of information about each user is kept private. Another part of the overall system itself is the web server. The web server is needed to transfer data over the internet and provides a connection with the database as well as connect to the device the user has such as a phone or tablet.
+
+The next part of the system that is in this project is the sensors. Sensors located on the touchscreen display to notify the user that their access to the building with their phone or tablet has been a success or failure. In turn these sensors connect with the terminal and server so the information can be processed and transferred over the internet. The sensors are part of the NFC, which are on the Pi that we shall be using for this project. Not forgetting the testing of the system. Rigorous testing is going to be carried out on this system throughout the development stages. Testing in essence to break the system repeatedly until updates and tweaks can be made to make the system as reliable as possible. Such tests taking place are acceptance testing, unit testing and integration testing. Acceptance testing lets the system fail repeatedly until it works. Unit testing gives us the chance to focus on a subset of the system such as individual parts and only conduct tests in that area. Integration testing takes these individual parts and brings them together for testing. The Integration testing shall be done after the unit tests have completed.
+
+System Architecture Diagram
+Below is the system architect diagram which is intended to give a more visual depiction of how they system will operate and how the different hardware shall carry out tasks and processes. 
+(Image of  System Diagram goes here)
+
+
+Use Case Persona
+An example of a user of the system is James who is a 27-year-old employee at the retail store that uses the clocked
+system. The main goal for James is to get paid each week as he is saving up for a deposit for a house. 
+James cannot clock in as he has forgotten his phone and password that contains his login details so he 
+will have to go to the manager’s office and request to be logged in manually. There will be no issue with
+this as James details as an employee and his hours are stored and kept safe in the database.
+
+The work that I shall be carrying out as the system architect is not only the installing of software and setting up of hardware, but I will be managing the overall system as to how it progresses forward at each stage of this project. This means that I can keep a close eye on the system as a whole and make changes or tweaks to a piece of software or find better use for hardware that less problems can occur. Further to my work I must ensure and continue to see that constant engagement and feedback is continuous and up to date with each member of the team in my group. Using this method gives us as a team and the project itself a higher chance of being a success at the end of the project.
+  
 
 Backend{Finbar}
 // Talk about device logic for communicating with AWS with PubNub, how the data will be sent, how it will be stored once it reaches the server. How will it be secured? Choices for login in credentials, database schema.
@@ -89,19 +118,19 @@ there is no way the system can become stuck or can break down depending on user 
 
 Testing{Desmond}
 // Pretty much a repeat of the presentation with as much more detail as you want, include how you’ll test, what you’ll test. Security testing. Like Enda brought up, testing from the Managers perspective, its assumed the employee can’t be trusted but not the manager, we should change that. At the end include the work you will be doing.
-For this project, we'll have to do multiple waves of testing, doing unit-testing, integration and performance/system tests and then finally user acceptance at the end from both parties (the Employee and the Manager) perspectives. 
+For this project, we'll have to do multiple waves of testing, doing unit-testing, integration, and performance/system tests, and then finally user acceptance at the end from both parties (the Employee and the Manager) perspectives. 
 So using an AGILE testing methodology would be best as it would mean that we are continuously testing what we are currently doing.
 {AGILE image}
-This is to make sure the code is working as it should and that it is properly connected and interacting with the other features, such as the terminal, the webserver, and the database, with as little of errors or problems that we can.
+This is to make sure the code is working as it should and that it is properly connected and interacting with the other features, such as the terminal, the webserver, and the database, with as few errors or problems that we can.
 Unit-Testing is a way of testing a small segment of code isolated away from the rest of the app, be that a function, method, subroutine, or property, to confirm that it can be executed properly without relying on others.
-Anytime a change is made to the code, new unit testing will need to be conducted to ensure that it hasn't negatively affected the current build of the system and so any unknown issues are resolved efficiently and in a timely manner.
-Integration is when we start putting all the code together and testing them as a group instead of individually Unit-Testing them. This is to make sure nothing interferes with other parts of the system, unless we have purposefully aimed to make it that way.
-Performance or System Testing is when, after integration is all sorted, we put the system under various workloads to test its response time, speed, resource usage and other aspects that might affect the systems overall performance.
-During this, I'll also be testing the security of various aspects of the system, trying to break it and or find vulnerabilities and reguraly provide feedback to those in the relevent roles. 
-For this, I'll be researching and hopefully using the Operations Security (OPSEC) methodology. OPSEC, is a 5-Step process in which I must indentify critical information, analyze the threat, analyze the vulnerability, access the risks and then apply the appropriate countermeasures. In regards to the system security, notable prioritizing securing the NFC and database aspects of it.
+Anytime a change is made to the code, new unit testing will need to be conducted to ensure that it hasn't negatively affected the current build of the system and so any unknown issues are resolved efficiently and promptly.
+Integration is when we start putting all the code together and testing them as a group instead of individually Unit-Testing them. This is to make sure nothing interferes with other parts of the system unless we have purposefully aimed to make it that way.
+The performance or System Testing is when, after integration is all sorted, we put the system under various workloads to test its response time, speed, resource usage, and other aspects that might affect the system's overall performance.
+During this, I'll also be testing the security of various aspects of the system, trying to break it and or find vulnerabilities, and regularly providing feedback to those in the relevant roles. 
+For this, I'll be researching and hopefully using the Operations Security (OPSEC) methodology. OPSEC is a 5-Step process in which I must identify critical information, analyze the threat, analyze the vulnerability, access the risks, and then apply the appropriate countermeasures. In regards to the system security, notable prioritizing securing the NFC and database aspects of it.
 {OPSEC image}
-After all the previous test phases are completed, then we can start doing User Acceptance Testing. This is the final phase to be done. This is where we have to get users, most likely friends and or family, to test the system from both employee and manager views and see if they are able to complete a number of tasks in emulated scenarios similar to the envirnoment of its intended use. 
-The system must be as easy to use and efficient as possible. We'd need to observe and take note of where the users are clicking or tapping, how the they feel about the size, position and colour of features on the app and webpages.
+After all the previous test phases are completed, then we can start doing User Acceptance Testing. This is the final phase to be done. This is where we have to get users, most likely friends and or family, to test the system from both employee and manager views and see if they can complete several tasks in emulated scenarios similar to the environment of its intended use. 
+The system must be as easy to use and efficient as possible. We'd need to observe and take note of where the users are clicking or tapping, how they feel about the size, position, and colour of features on the app and webpages.
 
 
 Personas and Use Cases {Anyone}
