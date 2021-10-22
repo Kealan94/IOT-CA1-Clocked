@@ -13,8 +13,9 @@ Sean Stephens (UI , UX and Frontend)
 Ciaran Brennan (IoT, Hardware)
 // {Ciaran}Brief description of role
 Desmond Madden (Testing of System, Software, Security and UX)
-// {Desmond}Brief description of role
+
 My role in this project is to test the System, Software, Security and UX of the device and app and provide feedback and possible solutions to the relevant roles.
+
 Kealan Crilly (System Architect)
 // {Kealan}Brief description of role
 Finbar Thornton {Backend, Database and Server}
@@ -40,8 +41,7 @@ User Interface{Sean}
 // Talk about the UI, share pictures of it, design choices. How will the user interact with it? What access will they have? Where can they interface with it? Do managers and employees see the same amount of information?
 At the end include the work you will be doing.
 
-Testing{Desmond}
-// Pretty much a repeat of the presentation with as much more detail as you want, include how you’ll test, what you’ll test. Security testing. Like Enda brought up, testing from the Managers perspective, its assumed the employee can’t be trusted but not the manager, we should change that. At the end include the work you will be doing.
+Testing
 For this project, we'll have to do multiple waves of testing, doing unit-testing, integration, and performance/system tests, and then finally user acceptance at the end from both parties (the Employee and the Manager) perspectives. 
 So using an AGILE testing methodology would be best as it would mean that we are continuously testing what we are currently doing.
 {AGILE image}
@@ -60,7 +60,10 @@ The system must be as easy to use and efficient as possible. We'd need to observ
 Personas and Use Cases {Anyone}
 // 5 Personas(5 Use cases): Employee (Everything works), Employee (Forgot their phone and password), Employee(New employee being added to the system), Payroll(Adding someone who can’t get clocked in), Manager(Checking on who is in and who is late)
 
+New Employee - Daniel
 
+Daniel is a 17 year old tech savvy male who's nervous starting his new job to start saving for his first car. Since he's still underage and in school, he can only work at the weekends and holidays, He owns a Samsung S10 android phone.
+Arriving for his first day on his new job, the manager is adding him into the system. For this, he gives his name and email and the Manager adds them into the database and some keys and a password are generated to create a new user in the database. Daniel then downloads the Clocked app and signs in using his email and the password generated.
 
 
 
