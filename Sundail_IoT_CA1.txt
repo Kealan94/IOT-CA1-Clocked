@@ -51,14 +51,6 @@ System Architecture Diagram
 Below is the system architect diagram which is intended to give a more visual depiction of how they system will operate and how the different hardware shall carry out tasks and processes. 
 (Image of  System Diagram goes here)
 
-
-Use Case Persona
-An example of a user of the system is James who is a 27-year-old employee at the retail store that uses the clocked
-system. The main goal for James is to get paid each week as he is saving up for a deposit for a house. 
-James cannot clock in as he has forgotten his phone and password that contains his login details so he 
-will have to go to the manager’s office and request to be logged in manually. There will be no issue with
-this as James details as an employee and his hours are stored and kept safe in the database.
-
 The work that I shall be carrying out as the system architect is not only the installing of software and setting up of hardware, but I will be managing the overall system as to how it progresses forward at each stage of this project. This means that I can keep a close eye on the system as a whole and make changes or tweaks to a piece of software or find better use for hardware that less problems can occur. Further to my work I must ensure and continue to see that constant engagement and feedback is continuous and up to date with each member of the team in my group. Using this method gives us as a team and the project itself a higher chance of being a success at the end of the project.
   
 
@@ -144,7 +136,14 @@ Frank is the manager of the shop and wants to know who is in work and who is abs
 system shows that one of his workers is absent from work without making him aware that she would be absent. He gets her phone number from his files to contact her and resolves the issue.
 
 
+Use Case Persona(James)
 
+Employee - James
+An example of a user of the system is James who is a 27-year-old employee at the retail store that uses the clocked
+system. The main goal for James is to get paid each week as he is saving up for a deposit for a house. 
+James cannot clock in as he has forgotten his phone and password that contains his login details so he 
+will have to go to the manager’s office and request to be logged in manually. There will be no issue with
+this as James details as an employee and his hours are stored and kept safe in the database.
 
 
 
