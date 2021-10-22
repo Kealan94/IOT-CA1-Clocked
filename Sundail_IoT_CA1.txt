@@ -14,6 +14,7 @@ My Role in this project is to design the User Interface and to define what the u
 
 Ciaran Brennan (IoT, Hardware)
 // {Ciaran}Brief description of role
+My role in the project is to ensure all the hardware works toegther and is able to perform it's intended purposes.
 
 Desmond Madden (Testing of System, Software, Security and UX)
 // {Desmond}Brief description of role
@@ -25,13 +26,6 @@ I am the system architect for this project and my role will be involved with the
 Finbar Thornton {Backend, Database and Server}
 My role will involve programming and designing the backend logic the device will use to communicate with the server and the server with the device, how that data will be stored and ensuring security of the data.
 
-
-
-
-Hardware{Ciaran}
-[FRITZING DIAGRAM IMAGE OF CIRCUIT]
-// Describe components (Pi, sensors, display), NFC technology, where they’re sourced, if they’re ordered or received. NFC on the smartphone, how reliable components are. Include images of the components How will the device be powered, how will it connect to the internet (WiFi, Internet). Describe what information the device will accept from the outside.
-At the end include the work you will be doing.
 
 IOT HARDWARE
 I am Ciaran and my focus on this project will primarily be the IOT hardware. The components we will be using for Clocked in a pi, a NFC(Near Field Communication) sensor and a screen. NFC technology is used worldwide in everyday life such as tapping a debit card off the card machine to pay for your groceries or using apple pay and google wallet. NFC has a range of 4cm and uses two electronic devices. I bought the raspberry pi4 model B 4GB for 78£ along with all the necessary equipment from *Insert link* along with the sensor called the NFC HAT for £13.50 from *Insert link* and we haven’t yet fully decided on which screen we are going to acquire. The pi4 and the sensor has arrived. Phones support NFC so in our project we will try add a virtual NFC card to the app so that an employee can tap it against the sensor whenever he/she arrives into work and leaves it. NFC is generally very reliable as it doesn’t require internet and only needs to devices that support it, NFC is also very quick to use as all it takes is a quick hand motion. Issues that may affect this method of clocking in is that if there is no power the raspberry pi will not work, another issue is that an employee may forget their phone which means they would be unable to use NFC. In terms of the hardware we have got the raspberry pi is very reliable as it can be ran none stop for long periods of time, I haven’t yet got a chance to test the reliability of the NFC sensor as it only came in during this week. The raspberry pi will be powered using a standard power supply with 5.1 voltage and a 2.5A current plugged into a socket on the wall. The device when it is put together will be able to tell the time, know if an employee is clocked in to work or is clocking out and it will have to be able to allow an employee to clock in manually if there is an issue with the NFC. In this project I hope to be able to work all the devices in a proper manner and be able to make them work together, I will have to connect the NFC sensor to the pi in order for the pi to know if a user has clocked in or out, I will connect the screen to the raspberry pie using a HDMI so you can see feedback from the screen to say you have successfully clocked in. I will have to learn how the NFC sensor works and if the pi is compatible with the screen.
@@ -135,6 +129,8 @@ The system must be as easy to use and efficient as possible. We'd need to observ
 Personas and Use Cases {Anyone}
 // 5 Personas(5 Use cases): Employee (Everything works), Employee (Forgot their phone and password), Employee(New employee being added to the system), Payroll(Adding someone who can’t get clocked in), Manager(Checking on who is in and who is late)
 
+USE CASE
+Sarah is 20 year old employee in the retail shop who would be quite adept with technology. Sarah is a part time worker who has to work at least 3 days a week, she has had no issues with the clocking in system and it has been using it for 2 months, so Sarah finds the new clocking system much less hassle than any other she has used before.
 
 
 
