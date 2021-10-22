@@ -11,13 +11,17 @@ Our group name is Sundial to keep with the theme of time keeping. The work for t
 Sean Stephens (UI , UX and Frontend)
 // {Sean}Brief description of role
 My Role in this project is to design the User Interface and to define what the users experience will be when using this system, along with who will be accessing the system and where.
+
 Ciaran Brennan (IoT, Hardware)
 // {Ciaran}Brief description of role
+
 Desmond Madden (Testing of System, Software, Security and UX)
 // {Desmond}Brief description of role
 My role in this project is to test the System, Software, Security and UX of the device and app and provide feedback and possible solutions to the relevant roles.
+
 Kealan Crilly (System Architect)
-// {Kealan}Brief description of role
+// {Kealan}Brief description of role Description of role
+I am the system architect for this project and my role will be involved with the design of the technical infrastructure for the project and the acquiring of the hardware and installation of software involved for this project. 
 Finbar Thornton {Backend, Database and Server}
 My role will involve programming and designing the backend logic the device will use to communicate with the server and the server with the device, how that data will be stored and ensuring security of the data.
 
@@ -32,6 +36,20 @@ At the end include the work you will be doing.
 System{Kealan}
 // Talk about the system as a whole, not in as much detail as others topic but enough to have an understanding of the logical layout.
 At the end include the work you will be doing.
+
+System Architect
+The system itself
+The system itself is a touchscreen display for the users of it to be able to input their own credentials to clock in and out of work. The response from the screen displays a success or failure. A success gives a green arrow and tick, a failure shows a red x error and denies access to the user. This is the core part of the user experience and user interface of the system. It is what the user will see and feel when they go to carry out their intended task of clocking in. It is important and often understated within systems because a nice clean easy and efficient interface and experience for a user means they themselves are more willing and happier to continue to use the system due to the ease with which they can perform their task.
+Beyond this screen other components of the system are the database which stores the information of the users of the system. The database itself can be updated and changed in keeping up to date with new users or users leaving the system for whatever reason. Security of the data in the database is of utmost importance and must be kept as secure as possible to ensure the confidentiality and integrity of information about each user is kept private. Another part of the overall system itself is the web server. The web server is needed to transfer data over the internet and provides a connection with the database as well as connect to the device the user has such as a phone or tablet.
+
+The next part of the system that is in this project is the sensors. Sensors located on the touchscreen display to notify the user that their access to the building with their phone or tablet has been a success or failure. In turn these sensors connect with the terminal and server so the information can be processed and transferred over the internet. The sensors are part of the NFC, which are on the Pi that we shall be using for this project. Not forgetting the testing of the system. Rigorous testing is going to be carried out on this system throughout the development stages. Testing in essence to break the system repeatedly until updates and tweaks can be made to make the system as reliable as possible. Such tests taking place are acceptance testing, unit testing and integration testing. Acceptance testing lets the system fail repeatedly until it works. Unit testing gives us the chance to focus on a subset of the system such as individual parts and only conduct tests in that area. Integration testing takes these individual parts and brings them together for testing. The Integration testing shall be done after the unit tests have completed.
+
+System Architecture Diagram
+Below is the system architect diagram which is intended to give a more visual depiction of how they system will operate and how the different hardware shall carry out tasks and processes. 
+(Image of  System Diagram goes here)
+ 
+The work that I shall be carrying out as the system architect is not only the installing of software and setting up of hardware, but I will be managing the overall system as to how it progresses forward at each stage of this project. This means that I can keep a close eye on the system as a whole and make changes or tweaks to a piece of software or find better use for hardware that less problems can occur. Further to my work I must ensure and continue to see that constant engagement and feedback is continuous and up to date with each member of the team in my group. Using this method gives us as a team and the project itself a higher chance of being a success at the end of the project.
+  
 
 Backend{Finbar}
 // Talk about device logic for communicating with AWS with PubNub, how the data will be sent, how it will be stored once it reaches the server. How will it be secured? Choices for login in credentials, database schema.
