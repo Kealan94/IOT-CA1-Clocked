@@ -161,6 +161,15 @@ James cannot clock in as he has forgotten his phone and password that contains h
 go to the manager’s office and request to be logged in manually. There will be no issue with this as James details 
 as an employee and his hours are stored and kept safe in the database.
 
+Manager - Frank
+
+56 year old Man who has been working in the retail sector for 30 years. He is very open to the idea of CLOCKED and has been using the system happily for a number of weeks
+
+Frank is the manager of the shop and wants to know who is in work and who is absent. To do this he logs into the CLOCKED web app, and goes to the View Staff menu option. Which allows him to view all current workers in the shop. The CLOCKED
+system shows that one of his workers is absent from work without making him aware that she would be absent. He gets her phone number from his files to contact her and resolves the issue.
+
+
+
 
 
 
