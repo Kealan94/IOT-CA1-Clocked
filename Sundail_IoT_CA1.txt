@@ -132,6 +132,16 @@ Personas and Use Cases {Anyone}
 USE CASE
 Sarah is 20 year old employee in the retail shop who would be quite adept with technology. Sarah is a part time worker who has to work at least 3 days a week, she has had no issues with the clocking in system and it has been using it for 2 months, so Sarah finds the new clocking system much less hassle than any other she has used before.
 
+Manager - Frank
+
+56 year old Man who has been working in the retail sector for 30 years. He is very open to the idea of CLOCKED and has been using the system happily for a number of weeks
+
+Frank is the manager of the shop and wants to know who is in work and who is absent. To do this he logs into the CLOCKED web app, and goes to the View Staff menu option. Which allows him to view all current workers in the shop. The CLOCKED
+system shows that one of his workers is absent from work without making him aware that she would be absent. He gets her phone number from his files to contact her and resolves the issue.
+
+
+
+
 
 
 
