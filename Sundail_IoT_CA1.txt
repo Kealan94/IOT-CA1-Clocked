@@ -9,7 +9,7 @@ The Team
 Our group name is Sundial to keep with the theme of time keeping. The work for this project will be delegated as follows:
 
 Sean Stephens (UI , UX and Frontend)
-// {Sean}Brief description of role
+
 My Role in this project is to design the User Interface and to define what the users experience will be when using this system, along with who will be accessing the system and where.
 
 Ciaran Brennan (IoT, Hardware)
@@ -67,54 +67,54 @@ Backend{Finbar}
 At the end include the work you will be doing.
 
 User Interface{Sean}
-//
+
 The core task of this system is to allow the user to clock in and to clock out for work. This will be the main means to judge whether this project has been successful. The project will contain many other features which 
 will also be used to judge of the system has been a success. This system will be used in workplaces, which of course involves a large scope of users, ranging from those who will easily adapt to a new system, to those 
 who will have major difficulty adapting to a new system.
-//
+
 {images 1,2,3}
-//
+
 The system will be an app on the users phone, and there will also be a web app version available, which will be mainly used by more authorized users than the basic staff. Above we can see the interface that the employee 
 will be faced with when they are simply clocking in and clocking out. From left to right we have the Start up screen of the app, the screen a user will be presented with when they clock in and the screen that the user 
 will be presented with when they clock out.
-//
+
 The system will have a ‘failsafe’ which is the Sign In option, which is also displayed on the examples above. This allows the user to enter their User ID and Password if the nfc / contactless system malfunctions for any 
 reason. When the user clicks the Sign In button they will be presented with this screen.
-//
+
 {images 4,5}
-//
+
 The use of this failsafe ensures that the system will never be completely down for the company in terms of the main core functionality.
-//
+
 Each of these screens shown so far are using the blank template that each system will make use of when initially installed by a company. This is because there will be a number of color templates and schemes, as shown 
 above, that the company can choose from to suit their branding.
-//
+
 The web app will follow a very similar layout to the mobile app, in that it will be simplistically structured and so easy to follow. It will also have the same color template system which allows customization / personalization 
 for each company. The web app will have differing levels of access for different levels of staff, for example, a manager will be able to view the whole Rota along with the abilities to create a new Rota and clock employees in 
 or out. Whereas a regular employee will only be able to see their own hours for the week and will only have the ability to view their current status on the app, in terms of whether they are clocked in or not.
-//
+
 Basic Manager / Supervisor View
-//
+
 {image 6}
-//
+
 This is the view that the manager or supervisors will have when they initially log in to the CLOCKED web app, from here they can view the staff of the shop, where they can either add a new member of staff, remove a member of 
 staff who has left the company or they can edit a current staff member. For instance if a member of staff has forgot their phone, thy may need the supervisor to clock them in, which they can do using the edit staff feature as shown below;
-//
+
 {image 7}
-//
+
 The managers and supervisors can also view the current Rota. The manager however can view the Rota for any week and can edit any future Rota’s as we can see below. The current Rota is displayed in a table format, with three options below 
 it. The manager can edit the current Rota, in terms of if someone is off sick, they can filter the list to see who has the most hours or who is in on each day etc. They can also select which weeks Rota they can view. E.g. if they view 
 next weeks Rota they can then edit the list from there which allows them to insert all of the relevant staff and their hours.
-//
+
 {image 8}
-//
+
 The system will also be displayed on a smart tablet which will be in the vicinity of the nfc scanner. This will be used to give the user additional feedback when they do clock in or clock out, to further prevent any confusion associated 
 with the system. The tablet will be using the same app as what the employees will be using on their mobile phones.
-//
+
 I have decided that the system should be kept easy to follow with clearly labelled menus and information that is well spaced out, due to the variety of users that will be using the system.
-//
+
 Over the coming weeks I will be further fledging out the UI and will be deciding upon the finished color schemes, along with the precise levels of access that each level of user will be permitted to access. I will also have to ensure that 
 there is no way the system can become stuck or can break down depending on user input, for this I will have to work closely with Desmond who is carrying out the testing on the system.
-//
+
 
 Testing{Desmond}
 // Pretty much a repeat of the presentation with as much more detail as you want, include how you’ll test, what you’ll test. Security testing. Like Enda brought up, testing from the Managers perspective, its assumed the employee can’t be trusted but not the manager, we should change that. At the end include the work you will be doing.
@@ -135,6 +135,13 @@ The system must be as easy to use and efficient as possible. We'd need to observ
 
 Personas and Use Cases {Anyone}
 // 5 Personas(5 Use cases): Employee (Everything works), Employee (Forgot their phone and password), Employee(New employee being added to the system), Payroll(Adding someone who can’t get clocked in), Manager(Checking on who is in and who is late)
+
+Manager - Frank
+
+56 year old Man who has been working in the retail sector for 30 years. He is very open to the idea of CLOCKED and has been using the system happily for a number of weeks
+
+Frank is the manager of the shop and wants to know who is in work and who is absent. To do this he logs into the CLOCKED web app, and goes to the View Staff menu option. Which allows him to view all current workers in the shop. The CLOCKED
+system shows that one of his workers is absent from work without making him aware that she would be absent. He gets her phone number from his files to contact her and resolves the issue.
 
 
 
